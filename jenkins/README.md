@@ -118,3 +118,5 @@ docker ps -a
 ```
 
 To verify that the Docker hello world image was indeed run on the host computer.
+
+Next, practice using creating a persistent volume to share between Jenkins instances in [part 2](https://github.com/PeterLamar/docker-workshop/tree/master/sharevolume)
