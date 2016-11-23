@@ -1,4 +1,4 @@
-# Jenkins & Docker
+# Part 1 - Jenkins & Docker
 
 In this example we will run Jenkins from a container, which will in turn spin
 up containers on the host computer.
