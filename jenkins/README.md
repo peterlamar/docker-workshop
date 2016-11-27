@@ -31,31 +31,6 @@ RUN apt-get update \
 RUN echo "jenkins ALL=NOPASSWD: ALL" >> /etc/sudoers
 ```
 
-## Add plugins to jenkins
-
-Here we will copy a jenkins.txt file with any desired plugins so that
-our container can be configured and ready to go. It is also a good example of
-when it is helpful to copy a file into a container.
-
-```
-USER jenkins
-COPY plugins.txt /usr/share/jenkins/plugins.txt
-RUN /usr/local/bin/plugins.sh /usr/share/jenkins/plugins.txt
-```
-
-### Create plugins.txt file
-
-Make sure to create a plugins.txt file in the same directory as the dockerfile.
-Included are some basic plugins, feel free to add in the future as needed.
-
-```
-$ cat plugins.txt
-scm-api:latest
-git-client:latest
-git:latest
-greenballs:latest
-```
-
 ## Build the dockerfile
 
 Building the dockerfile we just wrote is straight forward. This will result in
