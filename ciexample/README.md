@@ -65,7 +65,7 @@ the repo of your forked repository
 ```
 node {  
   stage 'Checkout' 
-  git url: 'https://github.com/peterlamar/jenkins-pipeline.git'  
+  git url: 'https://github.com/PeterLamar/jenkins-docker-example.git'  
 
   stage 'build' 
   docker.build('mobycounter')  
