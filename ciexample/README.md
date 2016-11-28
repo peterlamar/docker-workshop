@@ -67,10 +67,12 @@ node {
   stage 'Checkout' 
   git url: 'https://github.com/PeterLamar/jenkins-docker-example.git'  
 
-  stage 'build' 
+  stage 'Build' 
   docker.build('mobycounter')  
 
-  stage 'deploy'  
+  stage 'Deploy'  
   sh './deploy.sh'
 }
 ```
+
+If the Checkout, Build, and Deploy steps all succeed then you can view the application running on the ip of the Jenkins Server at port 80. Enter the IP in your browser window and if you see a 'click to add icons' message then your application has succeeded. 
