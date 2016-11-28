@@ -76,3 +76,6 @@ node {
 ```
 
 If the Checkout, Build, and Deploy steps all succeed then you can view the application running on the ip of the Jenkins Server at port 80. Enter the IP in your browser window and if you see a 'click to add icons' message then your application has succeeded. 
+
+
+If everything is working please continue to [step 4](https://github.com/PeterLamar/docker-workshop/tree/master/compose)
